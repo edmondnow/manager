@@ -4,7 +4,6 @@ import { View, Text } from 'react-native';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Card, CardSection, Input, Button, Spinner } from './common';
 
-
 class LoginForm extends Component {
 
   onEmailChange(text) {
