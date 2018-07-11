@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ListView } from 'react-native';
 import { employeesFetch } from '../actions';
+import { Block } from './common';
 import ListItem from './ListItem';
 
 class EmployeeList extends Component {
@@ -34,11 +35,13 @@ class EmployeeList extends Component {
 
   render() {
     return (
-      <ListView
-        enableEmptySections
-        dataSource={this.dataSource}
-        renderRow={this.renderRow}
-      />
+      <Block>
+        <ListView
+          enableEmptySections
+          dataSource={this.dataSource}
+          renderRow={this.renderRow}
+        />
+      </Block>
     );
   }
 }
